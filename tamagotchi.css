@@ -6,24 +6,42 @@ body{
 }
 h1{
     font-family: 'Chewy', cursive;
-    font-size: 60px;
+    font-size: 8vh;
     text-align: center;
     margin-top: 70px;
     color: rgba(245, 14, 49, 0.528);
 
+}
+.hungerBar{
+    text-align: center;
+    accent-color: rgba(229, 95, 115, 0.87);
+    font-family: 'Indie Flower', cursive;
+    font-size: 19px;
+}
+.attentionBar{
+    text-align: center;
+    accent-color: rgb(242, 190, 144);
+    font-family: 'Indie Flower', cursive;
+    font-size: 19px;
+}
+.energyBar{
+    text-align: center;
+    accent-color: rgba(250, 156, 118, 0.987);
+    font-family: 'Indie Flower', cursive;
+    font-size: 19px;
 }
 .walkingdog{
    height: 300px;
    display: block;
    margin-left: auto;
    margin-right: auto;
-   margin-top: 100px;
+  top: 100px;
    box-shadow: 0 0 8px 8px rgb(252, 220, 215);
    
 }
-.ghostdog{
+/* .ghostdog{
     height: 300px;
-}
+} */
 
 .feedbtn{
     text-align: center;
@@ -32,8 +50,11 @@ h1{
 .lovebtn{
     text-align: center;
     margin-left: 500px;
+    
 }
 .sleepbtn{
     text-align: center;
     margin-left: 500px;
+    
+    
 }
