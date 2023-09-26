@@ -1,0 +1,39 @@
+/* body{
+    background-color: rgb(253, 213, 211);
+} */
+body{
+    background-color:rgb(252, 220, 215);
+}
+h1{
+    font-family: 'Chewy', cursive;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 70px;
+    color: rgba(245, 14, 49, 0.528);
+
+}
+.walkingdog{
+   height: 300px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 100px;
+   box-shadow: 0 0 8px 8px rgb(252, 220, 215);
+   
+}
+.ghostdog{
+    height: 300px;
+}
+
+.feedbtn{
+    text-align: center;
+    margin-left: 500px;
+}
+.lovebtn{
+    text-align: center;
+    margin-left: 500px;
+}
+.sleepbtn{
+    text-align: center;
+    margin-left: 500px;
+}
