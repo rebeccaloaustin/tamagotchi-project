@@ -9,6 +9,10 @@ let clock;
 const hungryBar = document.getElementById("hungryBar");
 const energyBar = document.getElementById("sleepyBar");
 const attentionBar = document.getElementById("loveyBar");
+const body = document.body;
+
+//starts the clock to continuously deplete stats
+clock = setInterval(depleteStats, 1000);
 
 //function to update the progress bars
 function updateBars() {
@@ -19,20 +23,22 @@ function updateBars() {
 
 //function to deplete the bars
 function depleteStats() {
-    if (hunger > 0) hunger -= 1;
-    if (energy > 0) energy -= 1;
-    if (attention > 0) attention -= 1;
+    if (hunger > 0) hunger -= 5;
+    if (energy > 0) energy -= 5;
+    if (attention > 0) attention -= 5;
     updateBars();
 //checking for end of game
     if (hunger === 0 || energy === 0 || attention === 0) {
         clearInterval(clock);
         document.getElementById("walkingDog").style.display = "none";
         document.getElementById("ghostDog").style.display = "block";
-        alert("Your Tamagotchi has passed away. Game over!");
+        body.classList.add('ghost-background');
+        document.getElementById("title").textContent = "Your tamagotchi has passed away. Game over!";
+
+        // alert("Your Tamagotchi has passed away. Game over!");
     }
 }
-//starts the clock to continuously deplete stats
-clock = setInterval(depleteStats, 1000);
+
 //event listener for the feed button
 document.getElementById("feedbtn").onclick = function () {
     if (hunger < 100) {

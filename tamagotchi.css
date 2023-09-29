@@ -1,10 +1,12 @@
-/* body{
-    background-color: rgb(253, 213, 211);
-} */
-body{
-    background-color:rgb(252, 220, 215);
+
+body {
+    background-color: rgb(255, 222, 217);
 }
-h1{
+.ghost-background {
+    background-color: rgb(253, 213, 211);
+}
+
+h1 {
     font-family: 'Chewy', cursive;
     font-size: 8vh;
     text-align: center;
@@ -12,49 +14,58 @@ h1{
     color: rgba(245, 14, 49, 0.528);
 
 }
-.hungerBar{
+
+.hungerBar {
     text-align: center;
     accent-color: rgba(229, 95, 115, 0.87);
     font-family: 'Indie Flower', cursive;
     font-size: 19px;
 }
-.attentionBar{
+
+.attentionBar {
     text-align: center;
     accent-color: rgb(242, 190, 144);
     font-family: 'Indie Flower', cursive;
     font-size: 19px;
 }
-.energyBar{
+
+.energyBar {
     text-align: center;
     accent-color: rgba(250, 156, 118, 0.987);
     font-family: 'Indie Flower', cursive;
     font-size: 19px;
 }
-.walkingdog{
-   height: 300px;
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-  top: 100px;
-   box-shadow: 0 0 8px 8px rgb(252, 220, 215);
-   
-}
-/* .ghostdog{
-    height: 300px;
-} */
 
-.feedbtn{
-    text-align: center;
-    margin-left: 500px;
+.walkingdog {
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top: 100px;
+    box-shadow: 0 0 8px 8px rgb(255, 222, 217);
+
 }
-.lovebtn{
-    text-align: center;
-    margin-left: 500px;
-    
+
+.ghostdog {
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 100px;
+    box-shadow: 0 0 8px 8px rgb(253, 213, 211);
 }
-.sleepbtn{
+
+#feedbtn {
     text-align: center;
-    margin-left: 500px;
-    
-    
+    margin-left: 950px;
+}
+
+#lovebtn {
+    text-align: center;
+    margin-left: 950px;
+
+}
+
+#sleepbtn {
+    text-align: center;
+    margin-left: 950px;
 }
