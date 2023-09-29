@@ -26,6 +26,8 @@ function depleteStats() {
 //checking for end of game
     if (hunger === 0 || energy === 0 || attention === 0) {
         clearInterval(clock);
+        document.getElementById("walkingDog").style.display = "none";
+        document.getElementById("ghostDog").style.display = "block";
         alert("Your Tamagotchi has passed away. Game over!");
     }
 }
