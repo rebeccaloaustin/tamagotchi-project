@@ -5,6 +5,9 @@ body {
 .ghost-background {
     background-color: rgb(253, 213, 211);
 }
+.old-background {
+    background-color: rgba(196, 137, 184, 0.342);
+}
 
 h1 {
     font-family: 'Chewy', cursive;
@@ -45,13 +48,28 @@ h1 {
     box-shadow: 0 0 8px 8px rgb(255, 222, 217);
 
 }
+/* p{
+    transform: translateY(340px)
+} */
+#ageText{
+    font-family: 'Indie Flower', cursive;
+    font-size: 19px;
+    text-align: center;
 
+}
 .ghostdog {
     height: 300px;
     margin-left: auto;
     margin-right: auto;
     top: 100px;
     box-shadow: 0 0 8px 8px rgb(253, 213, 211);
+}
+.olddog {
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 100px;
+    box-shadow: rgba(196, 137, 184, 0.342);
 }
 
 #feedbtn {

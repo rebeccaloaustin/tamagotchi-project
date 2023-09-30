@@ -1,18 +1,32 @@
+ 
 //define the variables
 window.onload = function() {
 let hunger = 100;
 let energy = 100;
 let attention = 100;
+let age = 0;
 let clock;
 
 //reference to progress bars
 const hungryBar = document.getElementById("hungryBar");
 const energyBar = document.getElementById("sleepyBar");
 const attentionBar = document.getElementById("loveyBar");
+const ageCounter = document.getElementById("ageDisplay");
 const body = document.body;
 
 //starts the clock to continuously deplete stats
+const ageInterval = setInterval(increaseAge, 5000);
 clock = setInterval(depleteStats, 800);
+
+//function to increase age of tamagotchi
+function increaseAge() {
+    age++;
+    ageCounter.textContent = age; 
+    if (age > 5){
+    document.getElementById("walkingDog").style.display = "none";
+    document.getElementById("oldDog").style.display = "block";
+    body.classList.add('old-background');
+}}
 
 //function to update the progress bars
 function updateBars() {
@@ -27,11 +41,15 @@ function depleteStats() {
     if (energy > 0) energy -= 5;
     if (attention > 0) attention -= 5;
     updateBars();
+
 //checking for end of game
     if (hunger === 0 || energy === 0 || attention === 0) {
         clearInterval(clock);
+        clearInterval(ageInterval); 
         document.getElementById("walkingDog").style.display = "none";
         document.getElementById("ghostDog").style.display = "block";
+        document.getElementById("oldDog").style.display = "none";
+        body.classList.remove('old-background');
         body.classList.add('ghost-background');
         document.getElementById("title").textContent = "Your tamagotchi has passed away. Game over!";
 
@@ -60,4 +78,5 @@ document.getElementById("lovebtn").onclick = function () {
         updateBars();
     }
 };
+
 };
