@@ -1,0 +1,15 @@
+body{
+    background: url(https://i.pinimg.com/originals/6c/d7/4b/6cd74bae87b2025e3d671a23dbf4b3ca.gif);
+}
+a{
+    text-decoration: none;
+}
+h1{
+    font-family: 'Chewy', cursive;
+    font-size: 25vh;
+    text-align: center;
+    margin-top: 70px;
+    color: rgba(245, 14, 49, 0.528);
+
+}
+

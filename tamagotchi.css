@@ -56,16 +56,21 @@ h1 {
 
 #feedbtn {
     text-align: center;
-    margin-left: 950px;
+    margin-left: 900px;
+    transform: translateY(87px)
+
 }
 
 #lovebtn {
     text-align: center;
-    margin-left: 950px;
+    margin-left: 900px;
+    transform: translateY(134px);
 
 }
 
 #sleepbtn {
     text-align: center;
-    margin-left: 950px;
+    margin-left: 900px;
+    transform: translateY(112px);
+
 }

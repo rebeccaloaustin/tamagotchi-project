@@ -12,7 +12,7 @@ const attentionBar = document.getElementById("loveyBar");
 const body = document.body;
 
 //starts the clock to continuously deplete stats
-clock = setInterval(depleteStats, 1000);
+clock = setInterval(depleteStats, 800);
 
 //function to update the progress bars
 function updateBars() {
