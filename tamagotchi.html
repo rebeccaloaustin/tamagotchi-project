@@ -18,6 +18,8 @@
     <h1 id="title">Take care of your tamagotchi</h1>
     <button id="namebtn" onclick="nameTamagotchi()">Name your tamagotchi</button>
     <div id="name"></div>
+    <button id="lightsbtn" onclick="game.lightsBtn()">Lights On/Off</button>
+    <!-- wanted to have a lightbulb image as button but, was having issues with resizing -->
     <div>
         <img class="walkingdog" id="walkingDog"
             src="https://i.pinimg.com/originals/3a/cb/28/3acb286033825938cfed1a6cd8e8f0d7.gif">
@@ -25,26 +27,27 @@
             src="https://i.pinimg.com/originals/d8/c8/57/d8c857302071c3d4a043b15c5c6b6bc0.gif" style="display: none;">
         <img class="olddog" id="oldDog"
             src="https://i.pinimg.com/originals/63/be/2f/63be2f466b1364f0932c7374b0417fc5.gif" style="display: none;">
-    </div>
-    <p id="ageText">Age: <span id="ageDisplay">0</span></p>
-    <div>
-        <button id="feedbtn"> feed </button>
-    </div>
-    <div>
-        <button id="sleepbtn"> sleep </button>
-    </div>
-    <div>
-        <button id="lovebtn"> love </button>
-    </div>
-    <div class='hungerBar'>
-        <p> hunger <progress id="hungryBar" min='0' max='100' value='100'></progress></p>
-    </div>
-    <div class='energyBar'>
-        <p> energy <progress id="sleepyBar" min='0' max='100' value='100'></progress></p>
-    </div>
-    <div class='attentionBar'>
-        <p> attention <progress id="loveyBar" min='0' max='100' value='100'></progress></p>
-    </div>
+
+        <p id="ageText">Age: <span id="ageDisplay">0</span></p>
+
+        <div>
+            <button id="feedbtn"> feed </button>
+        </div>
+        <div>
+            <button id="sleepbtn"> sleep </button>
+        </div>
+        <div>
+            <button id="lovebtn"> love </button>
+        </div>
+        <div class='hungerBar'>
+            <p> hunger <progress id="hungryBar" min='0' max='100' value='100'></progress></p>
+        </div>
+        <div class='energyBar'>
+            <p> energy <progress id="sleepyBar" min='0' max='100' value='100'></progress></p>
+        </div>
+        <div class='attentionBar'>
+            <p> attention <progress id="loveyBar" min='0' max='100' value='100'></progress></p>
+        </div>
 </body>
 
 </html>

@@ -6,8 +6,9 @@ const game = {
     age: 0,
     clock: null,
     ageInterval: null,
+    lightsOn: true,
 
-     startGame() {
+    startGame() {
         window.onload = () => {
             // Reference to progress bars
             this.hungryBar = document.getElementById("hungryBar");
@@ -71,6 +72,42 @@ const game = {
             this.body.classList.remove('old-background');
             this.body.classList.add('ghost-background');
             document.getElementById("title").textContent = "Your tamagotchi has passed away. Game over!";
+        }
+    },
+    //this lights button was a pain. Eventually would like for a separate dog image to appear when lights turn off. But, couldn't figure out.
+    lightsBtn() {
+        const body = document.body;
+        const walkingDog = document.getElementById("walkingDog");
+        const ghostDog = document.getElementById("ghostDog");
+        const oldDog = document.getElementById("oldDog");
+
+    // turn off the lights
+        if (this.lightsOn) {   
+            this.lightsOn = false;
+            this.originalBackgroundColor = body.style.backgroundColor;
+            body.style.backgroundColor = "grey";
+            // store original images in a object
+            this.originalImages = {
+                walkingDog: walkingDog.style.display,
+                ghostDog: ghostDog.style.display,
+                oldDog: oldDog.style.display,
+            };
+
+            // hide all images when lights are off
+            walkingDog.style.display = "none";
+            ghostDog.style.display = "none";
+            oldDog.style.display = "none";
+
+    // turn on the lights
+        } else {
+            this.lightsOn = true;
+            body.style.backgroundColor = this.originalBackgroundColor;
+
+            // display original images
+            walkingDog.style.display = this.originalImages.walkingDog;
+            ghostDog.style.display = this.originalImages.ghostDog;
+            oldDog.style.display = this.originalImages.oldDog;
+
         }
     },
 

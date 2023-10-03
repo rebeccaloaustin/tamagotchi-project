@@ -10,7 +10,7 @@ body {
     background-color: rgba(196, 137, 184, 0.342);
 }
 
-h1 {
+#title {
     font-family: 'Chewy', cursive;
     font-size: 8vh;
     text-align: center;
