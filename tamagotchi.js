@@ -7,7 +7,7 @@ const game = {
     clock: null,
     ageInterval: null,
 
-    startGame() {
+     startGame() {
         window.onload = () => {
             // Reference to progress bars
             this.hungryBar = document.getElementById("hungryBar");
