@@ -74,29 +74,34 @@ const game = {
             document.getElementById("title").textContent = "Your tamagotchi has passed away. Game over!";
         }
     },
-    //this lights button was a pain. Eventually would like for a separate dog image to appear when lights turn off. But, couldn't figure out.
+    //this lights button was a pain
     lightsBtn() {
         const body = document.body;
         const walkingDog = document.getElementById("walkingDog");
         const ghostDog = document.getElementById("ghostDog");
         const oldDog = document.getElementById("oldDog");
+        const blinkDog = document.getElementById("blinkDog");
 
     // turn off the lights
         if (this.lightsOn) {   
             this.lightsOn = false;
             this.originalBackgroundColor = body.style.backgroundColor;
-            body.style.backgroundColor = "grey";
+            body.style.backgroundColor = "black";
+
             // store original images in a object
             this.originalImages = {
                 walkingDog: walkingDog.style.display,
                 ghostDog: ghostDog.style.display,
                 oldDog: oldDog.style.display,
+                blinkDog: blinkDog.style.display,
+
             };
 
             // hide all images when lights are off
             walkingDog.style.display = "none";
             ghostDog.style.display = "none";
             oldDog.style.display = "none";
+            blinkDog.style.display = "block";
 
     // turn on the lights
         } else {
@@ -107,6 +112,7 @@ const game = {
             walkingDog.style.display = this.originalImages.walkingDog;
             ghostDog.style.display = this.originalImages.ghostDog;
             oldDog.style.display = this.originalImages.oldDog;
+            blinkDog.style.display = this.originalImages.blinkDog;
 
         }
     },

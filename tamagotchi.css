@@ -85,6 +85,12 @@ body {
     top: 100px;
     box-shadow: rgba(196, 137, 184, 0.342);
 }
+.blinkdog {
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 100px;
+}
 
 #feedbtn {
     text-align: center;
